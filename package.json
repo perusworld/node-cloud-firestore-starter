@@ -1,0 +1,43 @@
+{
+  "name": "node-ts-base",
+  "version": "1.0.0",
+  "description": "Node.js TypeScript Module - Base",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "transform": {
+      "^.+\\.(ts|tsx|js|html)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/perusworld/node-ts-base.git"
+  },
+  "keywords": ["nodejs", "typescript", "module"],
+  "author": "Saravana Perumal Shanmugam <saravanaperumal@msn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perusworld/node-ts-base/issues"
+  },
+  "homepage": "https://github.com/perusworld/node-ts-base",
+  "devDependencies": {
+    "@types/jest": "^20.0.0",
+    "@types/node": "^7.0.31",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
+    "typescript": "^2.3.4"
+  }
+}
