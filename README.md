@@ -1,1 +1,1 @@
-# Node.js TypeScript Module - Base #
+# Node.js TypeScript Express - Base #

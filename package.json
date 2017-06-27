@@ -1,12 +1,11 @@
 {
-  "name": "node-ts-base",
+  "name": "node-ts-express-base",
   "version": "1.0.0",
-  "description": "Node.js TypeScript Module - Base",
-  "main": "dist/index",
-  "types": "dist/index",
+  "description": "Node.js TypeScript Express - Base",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./bin/www"
   },
   "jest": {
     "globals": {
@@ -26,18 +25,30 @@
     "type": "git",
     "url": "git://github.com/perusworld/node-ts-base.git"
   },
-  "keywords": ["nodejs", "typescript", "module"],
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "module"
+  ],
+  "engines": {
+    "node": "8.1.2"
+  },
   "author": "Saravana Perumal Shanmugam <saravanaperumal@msn.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/perusworld/node-ts-base/issues"
+    "url": "https://github.com/perusworld/node-ts-express-base/issues"
   },
-  "homepage": "https://github.com/perusworld/node-ts-base",
+  "homepage": "https://github.com/perusworld/node-ts-express-base",
   "devDependencies": {
     "@types/jest": "^20.0.0",
     "@types/node": "^7.0.31",
     "jest": "^20.0.4",
     "ts-jest": "^20.0.6",
     "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.16.4",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
   }
 }
