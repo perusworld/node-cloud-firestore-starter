@@ -23,6 +23,6 @@ export class APIRoute {
   }
 
   public hello(req: Request, res: Response, next: NextFunction) {
-      res.json({msg:'hi there'})
+      res.json({msg:'hi there v1'})
   }
 }
