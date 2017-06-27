@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "postinstall": "tsc",
+    "postinstall": "./node_modules/typescript/bin/tsc",
     "start": "node ./bin/www"
   },
   "jest": {
