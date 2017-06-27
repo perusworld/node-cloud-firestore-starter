@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/perusworld/node-ts-base.git"
+    "url": "git://github.com/perusworld/node-ts-express-base.git"
   },
   "keywords": [
     "nodejs",
