@@ -4,8 +4,8 @@
   "description": "Node.js TypeScript Express - Base",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
-    "postinstall": "./node_modules/typescript/bin/tsc",
+    "build": "node ./node_modules/typescript/bin/tsc",
+    "postinstall": "node ./node_modules/typescript/bin/tsc",
     "start": "node ./bin/www"
   },
   "jest": {
