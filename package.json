@@ -41,14 +41,14 @@
   },
   "homepage": "https://github.com/perusworld/node-ts-express-base",
   "devDependencies": {
-    "@types/jest": "^20.0.0",
-    "@types/node": "^7.0.31",
+    "@types/body-parser": "^1.16.4",
+    "@types/jest": "^20.0.2",
+    "@types/node": "^7.0.33",
     "jest": "^20.0.4",
     "ts-jest": "^20.0.6",
-    "typescript": "^2.3.4"
+    "typescript": "^2.4.1"
   },
   "dependencies": {
-    "@types/body-parser": "^1.16.4",
     "body-parser": "^1.17.2",
     "express": "^4.15.3"
   }
