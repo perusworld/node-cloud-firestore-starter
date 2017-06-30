@@ -1,6 +1,6 @@
 {
   "name": "node-ts-express-base",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Node.js TypeScript Express - Base",
   "scripts": {
     "test": "jest",
@@ -44,12 +44,15 @@
     "@types/body-parser": "^1.16.4",
     "@types/jest": "^20.0.2",
     "@types/node": "^7.0.33",
+    "@types/request": "0.0.45",
     "jest": "^20.0.4",
+    "request": "^2.81.0",
     "ts-jest": "^20.0.6",
     "typescript": "^2.4.1"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
+    "color-convert": "^1.9.0",
     "express": "^4.15.3"
   }
 }

@@ -49,10 +49,9 @@ export class Server {
    * @method api
    */
   public api() {
-    let router: express.Router;
-    router = express.Router();
-
-    APIRoute.create(router);
+    let router = express.Router();
+    let apiRoutes = new APIRoute();
+    apiRoutes.buildRoutes(router);
     this.app.use('/api/v1', router);
   }
 
@@ -80,9 +79,9 @@ export class Server {
 
 
     // catch 404 and forward to error handler
-    this.app.use(function(err: any, req: express.Request, res: express.Response, next: express.NextFunction) {
-        err.status = 404;
-        next(err);
+    this.app.use(function (err: any, req: express.Request, res: express.Response, next: express.NextFunction) {
+      err.status = 404;
+      next(err);
     });
 
   }
