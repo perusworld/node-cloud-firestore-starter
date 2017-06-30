@@ -13,6 +13,7 @@ export class APIRoute {
   }
 
   public hello(req: Request, res: Response, next: NextFunction) {
+    console.log('Got', JSON.stringify(req.body, null, 2));
     res.json({
       msg: 'hi there v1',
       youSent: req.body
