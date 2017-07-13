@@ -3,6 +3,7 @@ import * as express from "express";
 import * as path from "path";
 
 import { APIRoute } from "./api";
+import { ControllerRoute } from "./controller";
 
 /**
  * The server.
@@ -38,8 +39,24 @@ export class Server {
     //configure application
     this.config();
 
+    //add controller
+    this.controller();
+
     //add api
     this.api();
+  }
+
+  /**
+   * Create Controller View routes
+   *
+   * @class Server
+   * @method controller
+   */
+  public controller() {
+    let router = express.Router();
+    let controllerRoutes = new ControllerRoute();
+    controllerRoutes.buildRoutes(router);
+    this.app.use('/', router);
   }
 
   /**
