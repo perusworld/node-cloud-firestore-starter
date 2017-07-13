@@ -8,7 +8,7 @@ export class RequestWrapper {
     };
 
     if (this.conf.httpProxy && "" !== this.conf.httpProxy) {
-      console.log('using proxy', this.conf.httpProxy);
+      console.log("using proxy", this.conf.httpProxy);
     }
   }
 
@@ -28,9 +28,9 @@ export class RequestWrapper {
         uri: this.conf.urlPrefix + ctx.endpoint,
         method: ctx.method,
       };
-      if ('POST' == ctx.method) {
+      if ("POST" == ctx.method) {
         req.json = ctx.payload;
-      } else if ('GET' == ctx.method) {
+      } else if ("GET" == ctx.method) {
         req.qs = ctx.payload;
       }
       if (this.conf.httpProxy && "" !== this.conf.httpProxy) {
@@ -40,7 +40,7 @@ export class RequestWrapper {
         if (error) {
           reject(error);
         } else if (200 == response.statusCode) {
-          resolve(typeof body == 'string' ? JSON.parse(body) : body);
+          resolve(typeof body == "string" ? JSON.parse(body) : body);
         } else {
           reject(body);
         }
@@ -51,11 +51,11 @@ export class RequestWrapper {
 
 export function requestWrapper(): RequestWrapper {
   return new RequestWrapper({
-    urlPrefix: process.env.BACKEND_API_URL || 'http://localhost:3000/api/v1/'
+    urlPrefix: process.env.BACKEND_API_URL || "http://localhost:3000/api/v1/"
   });
 }
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000;
 
-it('base request test //NOOP', () => {
+it("base request test //NOOP", () => {
 });
