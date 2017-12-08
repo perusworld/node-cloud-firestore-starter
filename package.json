@@ -10,7 +10,9 @@
   },
   "jest": {
     "globals": {
-      "__TS_CONFIG__": "tsconfig.json"
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
     },
     "transform": {
       "^.+\\.(ts|tsx|js|html)$": "./node_modules/ts-jest/preprocessor.js"
@@ -41,19 +43,19 @@
   },
   "homepage": "https://github.com/perusworld/node-ts-express-base",
   "devDependencies": {
-    "@types/body-parser": "^1.16.4",
-    "@types/jest": "^20.0.2",
-    "@types/node": "^7.0.36",
+    "@types/body-parser": "^1.16.8",
+    "@types/jest": "^20.0.8",
+    "@types/node": "^7.0.48",
     "@types/request": "0.0.45",
     "jest": "^20.0.4",
-    "request": "^2.81.0",
-    "ts-jest": "^20.0.7",
-    "typescript": "^2.4.1"
+    "request": "^2.83.0",
+    "ts-jest": "^20.0.14",
+    "typescript": "^2.6.2"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "color-convert": "^1.9.0",
-    "express": "^4.15.3",
-    "pug": "^2.0.0-rc.2"
+    "body-parser": "^1.18.2",
+    "color-convert": "^1.9.1",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
   }
 }
