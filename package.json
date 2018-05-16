@@ -1,6 +1,6 @@
 {
   "name": "node-ts-express-base",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Node.js TypeScript Express - Base",
   "scripts": {
     "test": "jest",
@@ -43,19 +43,20 @@
   },
   "homepage": "https://github.com/perusworld/node-ts-express-base",
   "devDependencies": {
-    "@types/body-parser": "^1.16.8",
-    "@types/jest": "^20.0.8",
-    "@types/node": "^7.0.55",
-    "@types/request": "0.0.45",
-    "jest": "^20.0.4",
-    "request": "^2.83.0",
-    "ts-jest": "^20.0.14",
-    "typescript": "^2.7.2"
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.11.1",
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.0",
+    "@types/request": "^2.47.0",
+    "jest": "^22.4.3",
+    "request": "^2.86.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.3"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "color-convert": "^1.9.1",
-    "express": "^4.16.2",
-    "pug": "^2.0.0-rc.4"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   }
 }
