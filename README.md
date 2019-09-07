@@ -1,4 +1,4 @@
-# My HelloWorld Service #
+# Node.js TypeScript Express - Base #
 
 ### NOTE: needs the following for now on heroku ###
 ```bash
