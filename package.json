@@ -1,7 +1,7 @@
 {
-  "name": "node-ts-express-base",
+  "name": "my-hw-svc",
   "version": "3.0.2",
-  "description": "Node.js TypeScript Express - Base",
+  "description": "my hello world service",
   "scripts": {
     "test": "jest",
     "build": "node ./node_modules/typescript/bin/tsc",
@@ -34,7 +34,7 @@
     "module"
   ],
   "engines": {
-    "node": "8.1.4"
+    "node": "10.x"
   },
   "author": "Saravana Perumal Shanmugam <saravanaperumal@msn.com>",
   "license": "MIT",
