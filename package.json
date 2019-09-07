@@ -11,7 +11,7 @@
   "jest": {
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "tsconfig.json"
+        "tsConfig": "tsconfig.json"
       }
     },
     "transform": {
@@ -43,20 +43,20 @@
   },
   "homepage": "https://github.com/perusworld/node-ts-express-base",
   "devDependencies": {
-    "@types/body-parser": "^1.17.0",
-    "@types/express": "^4.16.0",
-    "@types/jest": "^23.3.12",
-    "@types/node": "^10.12.18",
-    "@types/request": "^2.48.1",
-    "jest": "^23.6.0",
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.4",
+    "@types/request": "^2.48.2",
+    "jest": "^24.9.0",
     "request": "^2.88.0",
-    "ts-jest": "^23.10.5",
-    "typescript": "^3.2.2"
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "color-convert": "^1.9.3",
-    "express": "^4.16.4",
-    "pug": "^2.0.3"
+    "body-parser": "^1.19.0",
+    "color-convert": "^2.0.1",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
   }
 }
