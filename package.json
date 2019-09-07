@@ -34,7 +34,7 @@
     "module"
   ],
   "engines": {
-    "node": "8.1.4"
+    "node": "10.x"
   },
   "author": "Saravana Perumal Shanmugam <saravanaperumal@msn.com>",
   "license": "MIT",
