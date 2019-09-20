@@ -1,8 +1,16 @@
-# Node.js TypeScript Express - Base #
+# Node.js Cloud Firestore Starter #
 
-### NOTE: needs the following for now on heroku ###
+### Config - Heroku ###
 ```bash
-heroku config:set NPM_CONFIG_PRODUCTION=false
+heroku config:set CLIENT_EMAIL=<email>
+heroku config:set PROJECT_ID=<project id>
+heroku config:set SERVICE_KEY=<service key>
+```
+### Config - Powershell ###
+```bash
+$env:PRIVATE_KEY = [IO.File]::ReadAllText("<firestore.privatekey.textfile>")
+$env:CLIENT_EMAIL = "<firestore service account email>"
+$env:PROJECT_ID = "<firestore project id>"
 ```
 
 ### Run ###
